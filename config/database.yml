@@ -1,0 +1,18 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: Tanveer
+  host: localhost
+  pool: 5
+  username: postgres
+  password: postgres
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: Tanveer
+  host: localhost
+  pool: 5
+  username: postgres
+  password: postgres
+

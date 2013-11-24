@@ -1,0 +1,97 @@
+<div class="row-fluid">
+	<div class="span8 offset2 alert alert-danger">
+		<h2>Under construction. <a href="http://www.linkedin.com/profile/view?id=63338678">Connect</a> with me to learn more.</h2>
+	</div>
+</div>
+<div ng-controller="EntryCtrl">
+	<div class="row-fluid">
+		<div class="span5 offset1">
+			<div class="">
+				<h1>Hi. I'm Tanveer.</h1>
+				<hr>
+				<!-- Linkedin -->
+				<a href="http://www.linkedin.com/profile/view?id=63338678" class="btn btn-primary">
+					<img src="https://s1-s.licdn.com/scds/common/u/img/logos/LinkedIn_logo_white_92x22_v2.png"alt="View Tanveer Huq's profile on LinkedIn"></a>
+				<a href="/entries.pdf" class="btn btn-danger"><strong>View Resume PDF</strong></a>
+				<!-- StackOverflow -->
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="row-fluid">
+		<div class="offset1">
+			<h2>Hire me so you can...</h2>
+		</div>
+		<div class="offset2">
+			<h3>Launch your software as a service(saas) business.</h3>
+		</div>
+		<div class="offset2">
+			<h3>Have an extra hand on your current project.</h3>
+		</div>
+		<div class="offset2">
+			<h3>Save time with automation.</h3>
+		</div>
+		<div class="offset2">
+			<h3>Close github issues.</h3>
+		</div>
+	</div>
+	<hr>
+	<div class="row-fluid">
+		<div class="offset1">
+			<h2>Let's begin.</h2>
+		</div>
+		<div class="offset2">
+			<ul class="unstyled">
+				<li>
+					<h3>Discovery</h3>
+					<p>We begin with an initial consultation. Tell me the story behind your project.</p>
+				</li>
+				<li>
+					<h3>Determine needs and budget.</h3>
+				</li>
+				<li>
+					<h3>Receive a proposal.</h3>
+				</li>
+				<li>
+					<h3>Agree on timeframes, deliverables, and requirements.</h3>
+				</li>
+				<li>
+					<h3>Development and communication.</h3>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<hr>
+	<div class="row-fluid">
+		<div class="offset1">
+			<h2>Click to explore my history.</h2>
+		</div>
+		<div class="span8 offset2">
+			<entry-list></entry-list>
+		</div> <!-- class span -->
+	</div> <!-- class row -->
+	<hr>
+	<div class="row-fluid">
+		<div class="offset1">
+			<h2>Send me an email.</h2>
+		</div>
+		<div class="offset2 span4">
+			<form accept-charset="UTF-8" action="/contact" class="message" data-post-form="new_message" id="contact" method="post">
+				<div style="margin:0;padding:0;display:inline">
+					<input name="utf8" type="hidden" value="&#x2713;" />
+					<input name="_method" type="hidden" value="post" />
+					<input name="authenticity_token" type="hidden" value="{{$httpProvider.defaults.headers.common['X-CSRF-Token']}}" />
+				</div>
+				<div class="field">
+				  <label for="message_email">Your Email:</label>
+				  <input required id="message_email" class="input-block-level" name="message[email]" type="text" />
+				</div>
+				<div class="field">
+					<label for="message_body">Your Message:</label>
+					<textarea required id="message_body" style="height:8em;" class="input-block-level" name="message[body]"></textarea>
+				</div>
+				<br><input name="commit" class="btn btn-success pull-right" type="submit" value="Send" />
+			</form>
+		</div>
+	</div>
+</div> <!-- ng-controller -->

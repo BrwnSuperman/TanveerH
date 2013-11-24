@@ -1,0 +1,7 @@
+<ul>
+	<% Octokit.list_commits("brianpetro/resume").each do |e| %>
+		<li>
+			<%= e.commit.message %>
+		</li>
+	<% end %>
+</ul>
